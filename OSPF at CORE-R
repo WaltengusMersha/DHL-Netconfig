@@ -1,0 +1,8 @@
+ip routing
+router ospf 10
+router-id 1.1.3.3
+network 192.168.200.0 0.0.0.3 area 0
+network 192.168.200.64 0.0.0.3 area 0
+network 192.168.200.128 0.0.0.3 area 0
+do wr
+

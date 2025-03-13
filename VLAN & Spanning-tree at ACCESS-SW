@@ -1,0 +1,29 @@
+vlan 10
+name ST
+vlan 80
+name WL
+vlan 70
+name VOIP
+
+interface range f0/1-2
+switchport mode trunk
+exit
+
+interface range f0/3-23
+switchport mode access
+switchport access vlan 10
+switchport voice vlan 70
+exit
+
+
+interface f0/24
+switchport mode access
+switchport access vlan 80
+exit
+
+interface range f0/3-24
+spanning-tree portfast
+spanning-tree bpduguard enable
+exit
+do write
+

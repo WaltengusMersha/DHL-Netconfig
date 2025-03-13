@@ -1,0 +1,90 @@
+vlan 10
+name AC
+ex
+vlan 20
+name MK
+ex
+vlan 30
+name FIN
+ex
+vlan 40
+name LO
+ex
+vlan 50
+name ST
+ex
+vlan 60
+name IT
+ex
+vlan 70
+name VOIP
+ex
+vlan 80
+name WL
+ex
+
+
+interface vlan 10
+ip address 192.168.100.3 255.255.255.224
+ip helper-address 192.168.100.167
+standby 10 ip 192.168.100.1
+standby 10 preempt
+standby 10 priority 200
+exit
+
+interface vlan 20
+ip address 192.168.100.35 255.255.255.224
+ip helper-address 192.168.100.167
+standby 20 ip 192.168.100.33
+standby 20 preempt
+standby 20 priority 200
+exit
+
+interface vlan 30
+ip address 192.168.100.67 255.255.255.224
+ip helper-address 192.168.100.167
+standby 30 ip 192.168.100.65
+standby 30 preempt
+standby 30 priority 200
+exit
+
+interface vlan 40
+ip address 192.168.100.99 255.255.255.224
+ip helper-address 192.168.100.167
+standby 40 ip 192.168.100.97
+standby 40 preempt
+standby 40 priority 200
+exit
+
+interface vlan 50
+ip address 192.168.100.131 255.255.255.224
+ip helper-address 192.168.100.167
+standby 50 ip 192.168.100.129
+standby 50 preempt
+standby 50 priority 200
+exit
+
+interface vlan 60
+ip address 192.168.100.163 255.255.255.224
+ip helper-address 192.168.100.167
+standby 60 ip 192.168.100.161
+standby 60 preempt
+standby 60 priority 200
+exit
+
+interface vlan 70
+ip address 192.168.100.194 255.255.255.224
+ip helper-address 192.168.100.167
+standby 70 ip 192.168.100.193
+standby 70 preempt
+standby 70 priority 200
+exit
+
+interface vlan 80
+ip address 192.168.100.227 255.255.255.224
+ip helper-address 192.168.100.167
+standby 80 ip 192.168.100.225
+standby 80 preempt
+standby 80 priority 200
+exit
+

@@ -1,0 +1,13 @@
+enable
+config ter
+hostname VOIP-R
+line console 0
+password cisco
+login
+enable password cisco
+service password-encryption
+banner motd #-------------DO NOT ACCESS WITHOUT PERMISSION.--------------#
+
+do wr
+ex
+

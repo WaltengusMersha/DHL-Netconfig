@@ -1,0 +1,15 @@
+interf gig1/1
+nameif INSIDE
+security-level 100
+ex
+interface gig1/2
+nameif OUTSIDE
+security-level 0
+ex
+
+object network INSIDE-OUTSIDE
+subnet 192.168.100.0 255.255.255.0
+nat (INSIDE,OUTSIDE) dynamic interface
+ex
+end
+wr m

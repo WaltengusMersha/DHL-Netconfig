@@ -1,0 +1,7 @@
+config ter
+hostname PERIMETER-FWL
+enable password cisco
+service password-encryption
+do wr
+ex
+
