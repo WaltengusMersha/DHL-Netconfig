@@ -1,0 +1,17 @@
+ip dhcp pool vlan80
+network 192.168.100.224 255.255.255.224
+default-router 192.168.100.225
+dns-server 192.168.100.168
+exit
+
+ip dhcp excluded-address 192.168.100.225 192.168.100.230
+
+do wr
+
+
+
+
+
+
+
+
