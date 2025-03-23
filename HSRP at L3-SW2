@@ -17,10 +17,11 @@ vlan 60
 name IT
 ex
 vlan 70
-name VOIP
+name WL
+
 ex
 vlan 80
-name WL
+name VOIP
 ex
 
 
@@ -82,7 +83,6 @@ exit
 
 interface vlan 80
 ip address 192.168.100.227 255.255.255.224
-ip helper-address 192.168.100.167
 standby 80 ip 192.168.100.225
 standby 80 preempt
 standby 80 priority 200
