@@ -1,7 +1,7 @@
 telephony-service
 max-ephones 10
 max-dn 10
-ip source-address 192.168.100.225 port 2000
+ip source-address 192.168.100.193 port 2000
 auto assign 1 to 10
 ex
 ephone-dn 1
