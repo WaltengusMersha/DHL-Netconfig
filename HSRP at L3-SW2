@@ -73,6 +73,13 @@ standby 60 preempt
 standby 60 priority 200
 exit
 
+interface vlan 70
+ip address 192.168.100.194 255.255.255.224
+ip helper-address 192.168.100.193
+standby 70 ip 192.168.100.193
+standby 70 preempt
+standby 70 priority 200
+exit
 
 interface vlan 80
 ip address 192.168.100.227 255.255.255.224
