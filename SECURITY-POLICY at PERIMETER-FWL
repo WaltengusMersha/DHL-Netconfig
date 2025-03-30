@@ -1,0 +1,13 @@
+interface g1/1
+ip address 192.168.200.130 255.255.255.252
+no shutdown
+nameif INSIDE
+security-level 100
+ex
+
+interface g1/2
+ip address 190.168.200.1 255.255.255.252
+no shutdown
+nameif OUTSIDE
+security-level 0
+ex
