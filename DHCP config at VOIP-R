@@ -2,6 +2,7 @@ ip dhcp pool vlan70
 network 192.168.100.192 255.255.255.224
 default-router 192.168.100.193
 dns-server 192.168.100.168
+option 150 ip 192.168.100.193
 exit
 
 ip dhcp excluded-address 192.168.100.193 192.168.100.198
